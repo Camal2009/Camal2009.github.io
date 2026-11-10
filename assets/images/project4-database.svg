@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dbBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="360" rx="16" fill="url(#dbBg)"/>
+
+  <!-- Server stack / Database cylinders -->
+  <g transform="translate(100, 70)">
+    <!-- Cylinder 1 (top) -->
+    <path d="M0 30 C0 10 160 10 160 30 C160 50 0 50 0 30 Z" fill="#38bdf8"/>
+    <path d="M0 30 L0 70 C0 90 160 90 160 70 L160 30 Z" fill="#0284c7" opacity="0.8"/>
+    <ellipse cx="80" cy="30" rx="80" ry="18" fill="#38bdf8"/>
+    <circle cx="140" cy="55" r="4" fill="#22c55e"/>
+
+    <!-- Cylinder 2 (middle) -->
+    <path d="M0 90 L0 130 C0 150 160 150 160 130 L160 90 Z" fill="#0369a1" opacity="0.8"/>
+    <ellipse cx="80" cy="90" rx="80" ry="18" fill="#0284c7"/>
+    <circle cx="140" cy="115" r="4" fill="#22c55e"/>
+
+    <!-- Cylinder 3 (bottom) -->
+    <path d="M0 150 L0 190 C0 210 160 210 160 190 L160 150 Z" fill="#075985" opacity="0.8"/>
+    <ellipse cx="80" cy="150" rx="80" ry="18" fill="#0369a1"/>
+    <circle cx="140" cy="175" r="4" fill="#22c55e"/>
+  </g>
+
+  <!-- Relational schema table mockup -->
+  <g transform="translate(310, 60)">
+    <rect width="230" height="180" rx="8" fill="#1e293b" stroke="#06b6d4" stroke-width="2"/>
+    <rect width="230" height="32" rx="8" fill="#0f172a"/>
+    <text x="15" y="22" fill="#38bdf8" font-family="monospace" font-size="12" font-weight="700">TABLE: students_info</text>
+    
+    <!-- Table columns -->
+    <text x="15" y="55" fill="#e2e8f0" font-family="monospace" font-size="10">id: INT [PRIMARY KEY]</text>
+    <text x="15" y="75" fill="#94a3b8" font-family="monospace" font-size="10">course_code: VARCHAR(10)</text>
+    <text x="15" y="95" fill="#94a3b8" font-family="monospace" font-size="10">project_title: VARCHAR(50)</text>
+    <text x="15" y="115" fill="#94a3b8" font-family="monospace" font-size="10">status: VARCHAR(20)</text>
+    <text x="15" y="135" fill="#22c55e" font-family="monospace" font-size="10">grade_score: DECIMAL(4,2)</text>
+
+    <!-- Execution query pill -->
+    <rect x="15" y="148" width="160" height="20" rx="4" fill="#0f172a"/>
+    <text x="25" y="162" fill="#f59e0b" font-family="monospace" font-size="9">SELECT * FROM stats;</text>
+  </g>
+
+  <!-- Connection line with query arrow -->
+  <path d="M260 160 L310 160" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4 3"/>
+
+  <!-- Tag Pill -->
+  <g transform="translate(420, 292)">
+    <rect width="120" height="24" rx="12" fill="#06b6d4"/>
+    <text x="15" y="16" fill="#082f49" font-family="system-ui, sans-serif" font-size="11" font-weight="800">PROJECT 4</text>
+  </g>
+</svg>
