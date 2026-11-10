@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic, robotics, and community projects developed for SITE 1101: Principles of Information Systems.">
+  <title>Projects Showcase | Information Systems Portfolio</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       Site Header & Navigation
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="Portfolio Home">
+        <img src="assets/images/favicon.svg" alt="Portfolio Logo" class="brand-logo" width="34" height="34">
+        <span>Portfolio<span class="brand-tag">SITE 1101</span></span>
+      </a>
+
+      <!-- Mobile Navigation Hamburger -->
+      <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <!-- Main Navigation Menu -->
+      <nav id="main-nav" class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+        </ul>
+
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" type="button" title="Switch Theme" aria-label="Switch Theme">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       Main Content Area
+       ========================================================================= -->
+  <main class="site-main">
+    <div class="container">
+
+      <!-- Projects Header & Filters -->
+      <section class="projects-header">
+        <span class="badge badge-primary">Coursework &amp; Innovations</span>
+        <h1 class="hero-title" style="margin-top: 0.5rem;">Engineered Projects</h1>
+        <p class="section-subtitle">
+          Curated collection of academic software, community STEM outreach, and robotics prototypes developed during the semester.
+        </p>
+
+        <!-- Category Filters -->
+        <div class="project-filters" role="group" aria-label="Filter Projects">
+          <button class="filter-btn active" data-filter="all">All Projects (4)</button>
+          <button class="filter-btn" data-filter="web">Web &amp; Systems</button>
+          <button class="filter-btn" data-filter="outreach">Hour of Code</button>
+          <button class="filter-btn" data-filter="hardware">Robotics</button>
+          <button class="filter-btn" data-filter="database">Databases</button>
+        </div>
+      </section>
+
+      <!-- Projects Grid -->
+      <section class="projects-grid" aria-label="Projects Showcase">
+
+        <!-- ===================================================================
+             Project 1: Personal Portfolio & Information Systems Showcase
+             =================================================================== -->
+        <article id="project-1" class="project-card" data-category="web">
+          <div class="project-img-wrapper">
+            <span class="badge badge-primary project-badge-tag">Required &bull; Project 1</span>
+            <img 
+              src="assets/images/project1-portfolio.svg" 
+              alt="Screenshot illustration of Personal Portfolio Architecture" 
+              class="project-img"
+              width="600"
+              height="360"
+              loading="lazy"
+            >
+          </div>
+          <div class="project-body">
+            <h2 class="project-title">Personal Portfolio Website</h2>
+            
+            <div class="project-tech-stack">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3 (Tokens &amp; Grid)</span>
+              <span class="tech-tag">Vanilla JS ES6+</span>
+              <span class="tech-tag">GitHub Pages</span>
+              <span class="tech-tag">Web Audio API</span>
+            </div>
+
+            <p class="project-desc">
+              A high-performance, modular, and fully responsive personal portfolio designed to satisfy all course specifications 
+              for SITE 1101. Features custom CSS design tokens for fluid dark/light theming, zero-dependency sound effects, 
+              an interactive gamified skill tree matrix (+10% bonus feature), and strict mobile responsiveness without bloated libraries.
+            </p>
+
+            <div class="project-footer-actions">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                </svg>
+                Source Repository
+              </a>
+              <a href="index.html" class="btn btn-primary btn-sm">
+                Live Preview
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===================================================================
+             Project 2: Hour of Code Community Initiative
+             =================================================================== -->
+        <article id="project-2" class="project-card" data-category="outreach">
+          <div class="project-img-wrapper">
+            <span class="badge badge-success project-badge-tag">Required &bull; Project 2</span>
+            <img 
+              src="assets/images/project2-hourofcode.svg" 
+              alt="Illustration of Hour of Code Interactive Programming Workshop" 
+              class="project-img"
+              width="600"
+              height="360"
+              loading="lazy"
+            >
+          </div>
+          <div class="project-body">
+            <h2 class="project-title">Project 2 (Hour of Code)</h2>
+            
+            <div class="project-tech-stack">
+              <span class="tech-tag">Block-Based Programming</span>
+              <span class="tech-tag">Algorithmic Pedagogy</span>
+              <span class="tech-tag">Curriculum Design</span>
+              <span class="tech-tag">STEM Mentorship</span>
+            </div>
+
+            <p class="project-desc">
+              Organized and co-facilitated an Hour of Code community learning day for grade school learners. 
+              The curriculum guided 30+ students through fundamental computational structures—including sequential logic, 
+              conditional branching (if/else), and event-driven game loops—empowering students to assemble their first runnable games.
+            </p>
+
+            <div class="project-footer-actions">
+              <span class="badge badge-success">Completed Outreach</span>
+              <span style="font-size: 0.82rem; color: var(--text-dim); margin-left: auto;">SITE 1101 Milestone</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===================================================================
+             Project 3: Autonomous Robotics Prototype
+             =================================================================== -->
+        <article id="project-3" class="project-card" data-category="hardware">
+          <div class="project-img-wrapper">
+            <span class="badge badge-warning project-badge-tag">Required &bull; Project 3</span>
+            <img 
+              src="assets/images/project3-robotics.svg" 
+              alt="Schematic illustration of Autonomous Robotics Platform" 
+              class="project-img"
+              width="600"
+              height="360"
+              loading="lazy"
+            >
+          </div>
+          <div class="project-body">
+            <h2 class="project-title">Project 3 (Robotics)</h2>
+            
+            <div class="project-tech-stack">
+              <span class="tech-tag">Microcontroller (MCU)</span>
+              <span class="tech-tag">Ultrasonic Sonar</span>
+              <span class="tech-tag">Infrared Collision Detection</span>
+              <span class="tech-tag">Motor Driver (H-Bridge)</span>
+              <span class="tech-tag">C/C++ Control Loop</span>
+            </div>
+
+            <p class="project-desc">
+              Engineered a multi-sensor autonomous robotic rover capable of non-contact obstacle detection, 
+              real-time distance calibration, and dynamic trajectory adjustment. Calibrated dual HC-SR04 sonar sensors with 
+              infrared proximity detectors, implementing hysteresis filtering to eliminate false positives in cluttered testing arenas.
+            </p>
+
+            <div class="project-footer-actions">
+              <span class="badge badge-warning">Hardware Prototyping</span>
+              <span style="font-size: 0.82rem; color: var(--text-dim); margin-left: auto;">Lab Benchmark: 100% Pass</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===================================================================
+             Project 4: Relational Information System & Schema Optimization
+             =================================================================== -->
+        <article id="project-4" class="project-card" data-category="database">
+          <div class="project-img-wrapper">
+            <span class="badge badge-primary project-badge-tag">Bonus &bull; Project 4</span>
+            <img 
+              src="assets/images/project4-database.svg" 
+              alt="Illustration of Relational Database Entity Relationship Diagrams" 
+              class="project-img"
+              width="600"
+              height="360"
+              loading="lazy"
+            >
+          </div>
+          <div class="project-body">
+            <h2 class="project-title">Information Systems Database Modeling</h2>
+            
+            <div class="project-tech-stack">
+              <span class="tech-tag">Relational SQL</span>
+              <span class="tech-tag">3NF Normalization</span>
+              <span class="tech-tag">ER Diagramming</span>
+              <span class="tech-tag">Query Optimization</span>
+            </div>
+
+            <p class="project-desc">
+              Designed an enterprise database schema for tracking academic records, course prerequisite dependencies, and project submissions. 
+              Refined tables up to Third Normal Form (3NF) to eliminate anomalies, implemented referential integrity constraints, 
+              and benchmarked multi-table analytical JOIN queries for system reporting.
+            </p>
+
+            <div class="project-footer-actions">
+              <span class="badge badge-primary">Data Systems Modeling</span>
+              <span style="font-size: 0.82rem; color: var(--text-dim); margin-left: auto;">SQL Schema Complete</span>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       Site Footer
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>
+            <img src="assets/images/favicon.svg" alt="" width="20" height="20">
+            Information Systems Portfolio
+          </h4>
+          <p class="footer-desc">
+            Developed as part of the <strong>SITE 1101: Principles of Information Systems</strong> curriculum. 
+            Focused on modular development, version control mastery, and cloud static hosting.
+          </p>
+          <div class="footer-quote">
+            &ldquo;The loud claim fades; the quiet deed remains.&rdquo;
+          </div>
+        </div>
+
+        <div>
+          <h5 class="footer-col-title">Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home Page</a></li>
+            <li><a href="about.html" class="footer-link">About &amp; Gamified Resume</a></li>
+            <li><a href="projects.html" class="footer-link">Projects Showcase</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="footer-col-title">Course Info</h5>
+          <ul class="footer-links">
+            <li><span style="color: var(--text-muted);">Course:</span> SITE 1101</li>
+            <li><span style="color: var(--text-muted);">Platform:</span> GitHub Pages</li>
+            <li><span style="color: var(--text-muted);">Format:</span> Vanilla HTML/CSS/JS</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> Student Portfolio. All rights reserved.
+        </div>
+
+        <!-- Repository link with GitHub icon -->
+        <a 
+          href="https://github.com" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="repo-btn-link"
+          id="github-repo-link"
+          title="Visit GitHub Repository"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+          </svg>
+          <span>Repository</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>
